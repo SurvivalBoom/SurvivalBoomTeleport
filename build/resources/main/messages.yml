@@ -1,0 +1,52 @@
+#
+# SurvivalBoom Network 2024 | SurvivalBoomTeleport
+#             Messages File | By TIMURishche
+#
+
+no-permission: "&c| &fДинозаврик згриз ваші права! Кусь-кусь! (&c{PERMISSION}&f)"
+player-not-found: "&c| &fГравця &c{PLAYER} &fне знайдено."
+only-for-player: "&c| &fЦя команда тільки для гравців."
+command-error: "&c| &fДинозаврик відгриз шматок коду плагіну! Перевірте консоль на помилки."
+
+tpa-usage: "&c| &fВикористання: &c/tpa <Гравець>"
+tpahere-usage: "&c| &fВикористання: &c/tpahere <Гравець>"
+
+no-request-from-player: "&c| &fУ вас немає запитів від &c{PLAYER}&f."
+no-requests: "&c| &fУ вас немає запитів на телепортацію."
+
+tpa-self: "&c| &fВи не можете телепортуватись до самого себе!"
+tpahere-self: "&c| &fВи не можете телепортуватись до самого себе!"
+
+spawn-self: "&c| &fНавіщо?"
+
+you-moved-to-spawn: "&6&l! &fВи були телепортовані на спавн гравцем &6{PLAYER}&f."
+spawn-not-set: "&c&l! &fТочка спавну не встановлено :("
+
+already-teleporting: "&c| &fВи вже телепортуєтесь!"
+player-already-teleporting: "&c| &fГравець вже телепортується."
+
+help: |
+  &8| &c/sbteleport reload &7- Перезавантажити плагін.
+  &8| &c/sbteleport help &7- Виводить ось цей дуже цікавий текст.
+
+reloaded: "&a| &fПлагін &aSurvivalBoomTeleport &fперезавантажено."
+
+teleport-here-request-msg: |
+  &r
+  &e| &fГравець &c{SENDER} &fхоче телепортувати &eвас до себе&f.
+  &e| &fНатисніть кнопки нижче, щоб &cзаборонити &fабо &aдозволити&f.
+  &e| &fЗапит дійсний протягом &c120 секунд&f.
+  &r
+  &r {BUTTON-ACCEPT}{BUTTON-DENY}
+teleport-request-msg: |
+  &r
+  &e| &fГравець &c{SENDER} &fхоче телепортуватись &eдо вас&f.
+  &e| &fНатисніть кнопки нижче, щоб &cзаборонити &fабо &aдозволити&f.
+  &e| &fЗапит дійсний протягом &c120 секунд&f.
+  &r
+  &r {BUTTON-ACCEPT}{BUTTON-DENY}
+accept-button: "&r       &a&l[ПРИЙНЯТИ] &r   "
+deny-button: "&r     &c&l[ВІДХИЛИТИ] &r   "
+
+accept-button-hover: "&eНатисніть, щоб прийняти."
+deny-button-hover: "&eНатисніть, щоб відхилити."

@@ -1,0 +1,25 @@
+name: SurvivalBoomTeleport
+version: '1.0'
+main: net.survivalboom.survivalboomteleport.SurvivalBoomTeleport
+api-version: '1.20'
+depend: []
+softdepend:
+  - Vault
+  - PlaceholderAPI
+  - Essentials
+authors: [TIMURishche, SurvivalBoomNetwork 2024]
+description: Плагін на телепортації гравців за допомогою essentials
+website: https://survivalboom.net
+
+commands:
+  survivalboomteleport:
+    description: "Головна команда плагіну SurvivalBoomTeleport"
+    usage: /<commands> [args...]
+    aliases:
+      - tpa
+      - call
+      - tpdeny
+      - tpaccept
+      - sbtp
+      - tpahere
+      - spawn

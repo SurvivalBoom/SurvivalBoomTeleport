@@ -1,0 +1,193 @@
+#
+# SurvivalBoom Network 2024 | SurvivalBoom Teleport
+#         Configuration File | By TIMURishche
+#
+
+# Телепорт до гравців /tpa.
+tpa-teleport:
+  
+  enabled: true # Увімкнено?
+  countdown: 10 # Час який доведеться чекати гравцю при телепортації.
+  
+  cancel-on-move: true # Скасовувати телепортацію якщо гравець ворухнувся.
+
+  # Події. 100% кастомізація! ЮХУУУ!!!!
+  events:
+
+    10:
+      actions:
+        - "[play-sound] MUSIC_DISC_PIGSTEP 10 1"
+        - "[show-title] 1 6 1 &8&l&kkkk&#FC6F00&lS&#FC7700&lu&#FC7F00&lr&#FC8700&lv&#FC8F00&li&#FC9700&lv&#FC9F00&la&#FCA700&ll&#FCAF00&lB&#FCB700&lo&#FCBF00&lo&#FCC700&lm&8&l&kkkk{NL}&fТелепортація через &#00d5fc{TIME}&f..."
+#        - "[give-effect] blindness 11 255 true"
+#        - "[give-effect] slowness 11 255 true"
+
+    9:
+      actions:
+        - "[play-sound] ENTITY_EXPERIENCE_ORB_PICKUP 10 1"
+        - "[show-title] 1 6 1 &8&l&kkkk&#FC6F00&lS&#FC7700&lu&#FC7F00&lr&#FC8700&lv&#FC8F00&li&#FC9700&lv&#FC9F00&la&#FCA700&ll&#FCAF00&lB&#FCB700&lo&#FCBF00&lo&#FCC700&lm&8&l&kkkk{NL}&fТелепортація через &#00d5fc{TIME}&f..."
+    8:
+      actions:
+        - "[play-sound] ENTITY_EXPERIENCE_ORB_PICKUP 10 1"
+        - "[show-title] 1 6 1 &8&l&kkkk&#FC6F00&lS&#FC7700&lu&#FC7F00&lr&#FC8700&lv&#FC8F00&li&#FC9700&lv&#FC9F00&la&#FCA700&ll&#FCAF00&lB&#FCB700&lo&#FCBF00&lo&#FCC700&lm&8&l&kkkk{NL}&fТелепортація через &#00d5fc{TIME}&f..."
+
+    7:
+      actions:
+        - "[play-sound] ENTITY_EXPERIENCE_ORB_PICKUP 10 1"
+        - "[show-title] 1 6 1 &8&l&kkkk&#FC6F00&lS&#FC7700&lu&#FC7F00&lr&#FC8700&lv&#FC8F00&li&#FC9700&lv&#FC9F00&la&#FCA700&ll&#FCAF00&lB&#FCB700&lo&#FCBF00&lo&#FCC700&lm&8&l&kkkk{NL}&fТелепортація через &#00d5fc{TIME}&f..."
+
+    6:
+      actions:
+        - "[play-sound] ENTITY_EXPERIENCE_ORB_PICKUP 10 1"
+        - "[show-title] 1 6 1 &8&l&kkkk&#FC6F00&lS&#FC7700&lu&#FC7F00&lr&#FC8700&lv&#FC8F00&li&#FC9700&lv&#FC9F00&la&#FCA700&ll&#FCAF00&lB&#FCB700&lo&#FCBF00&lo&#FCC700&lm&8&l&kkkk{NL}&fТелепортація через &#00d5fc{TIME}&f..."
+
+    5:
+      actions:
+        - "[play-sound] ENTITY_EXPERIENCE_ORB_PICKUP 10 1"
+        - "[show-title] 1 6 1 &8&l&kkkk&#FC6F00&lS&#FC7700&lu&#FC7F00&lr&#FC8700&lv&#FC8F00&li&#FC9700&lv&#FC9F00&la&#FCA700&ll&#FCAF00&lB&#FCB700&lo&#FCBF00&lo&#FCC700&lm&8&l&kkkk{NL}&fТелепортація через &#00d5fc{TIME}&f..."
+
+    4:
+      actions:
+        - "[play-sound] ENTITY_EXPERIENCE_ORB_PICKUP 10 1"
+        - "[show-title] 1 6 1 &8&l&kkkk&#FC6F00&lS&#FC7700&lu&#FC7F00&lr&#FC8700&lv&#FC8F00&li&#FC9700&lv&#FC9F00&la&#FCA700&ll&#FCAF00&lB&#FCB700&lo&#FCBF00&lo&#FCC700&lm&8&l&kkkk{NL}&fТелепортація через &#00d5fc{TIME}&f..."
+
+    3:
+      actions:
+        - "[play-sound] ENTITY_EXPERIENCE_ORB_PICKUP 10 1"
+        - "[show-title] 1 6 1 &8&l&kkkk&#FC6F00&lS&#FC7700&lu&#FC7F00&lr&#FC8700&lv&#FC8F00&li&#FC9700&lv&#FC9F00&la&#FCA700&ll&#FCAF00&lB&#FCB700&lo&#FCBF00&lo&#FCC700&lm&8&l&kkkk{NL}&fТелепортація через &#00d5fc{TIME}&f..."
+
+    2:
+      actions:
+        - "[play-sound] ENTITY_EXPERIENCE_ORB_PICKUP 10 1"
+        - "[show-title] 1 6 1 &8&l&kkkk&#FC6F00&lS&#FC7700&lu&#FC7F00&lr&#FC8700&lv&#FC8F00&li&#FC9700&lv&#FC9F00&la&#FCA700&ll&#FCAF00&lB&#FCB700&lo&#FCBF00&lo&#FCC700&lm&8&l&kkkk{NL}&fТелепортація через &#00d5fc{TIME}&f..."
+
+    1:
+      actions:
+        - "[play-sound] ENTITY_EXPERIENCE_ORB_PICKUP 10 1"
+        - "[show-title] 1 6 1 &8&l&kkkk&#FC6F00&lS&#FC7700&lu&#FC7F00&lr&#FC8700&lv&#FC8F00&li&#FC9700&lv&#FC9F00&la&#FCA700&ll&#FCAF00&lB&#FCB700&lo&#FCBF00&lo&#FCC700&lm&8&l&kkkk{NL}&fТелепортація через &#00d5fc{TIME}&f..."
+
+    # Успішно телепортовано.
+    TELEPORTED:
+      others-actions:
+        - "[stop-sound] MUSIC_DISC_PIGSTEP"
+#        - "[clear-effect] blindness"
+#        - "[clear-effect] slowness"
+        - "[play-sound] ENTITY_ENDERMAN_TELEPORT 10 1"
+        - "[show-title] 1 6 1 &8&l&kkkk&#FC6F00&lS&#FC7700&lu&#FC7F00&lr&#FC8700&lv&#FC8F00&li&#FC9700&lv&#FC9F00&la&#FCA700&ll&#FCAF00&lB&#FCB700&lo&#FCBF00&lo&#FCC700&lm&8&l&kkkk{NL}&aТелепортовано до &#00d5fc{TARGET}&a..."
+      actions:
+        - "[play-sound] ENTITY_EXPERIENCE_ORB_PICKUP 10 1"
+        - "[send-message] &d&l? &fГравця &d{SENDER} &fтелепортовано до вас!"
+
+    # Запит відхилено.
+    REQUESTED:
+      others-actions:
+        - "[send-message] &a| &fВи відправили запит на телепортацію гравцю &a{TARGET}&f."
+
+    # Запит відхилено.
+    DENIED:
+      actions:
+        - "[play-sound] ENTITY_VILLAGER_NO 10 1"
+        - "[send-message] &c| &fГравець &c{TARGET} &fвідхилив ваш запит!"
+      others-actions:
+        - "[play-sound] ENTITY_EXPERIENCE_ORB_PICKUP 10 1"
+        - "[send-message] &c| &fВи відхилили запит гравця &c{SENDER}&f."
+
+    # Запит прийнято.
+    ACCEPTED:
+      actions:
+        - "[play-sound] BLOCK_NOTE_BLOCK_BELL 10 1"
+        - "[send-message] &a| &fГравець &a{TARGET} &fприйняв ваш запит."
+      others-actions:
+        - "[play-sound] ENTITY_EXPERIENCE_ORB_PICKUP 10 1"
+        - "[send-message] &a| &fВи прийняли запит гравця &a{SENDER}&f."
+
+    # Гравець ворухнувся.
+    MOVED:
+      actions:
+        - "[play-sound] BLOCK_NOTE_BLOCK_BELL 10 0"
+        - "[send-message] &c| &fГравець &c{TARGET} &fворухнувся. Телепортацію скасовано."
+      others-actions:
+        - "[play-sound] BLOCK_NOTE_BLOCK_BELL 10 0"
+        - "[stop-sound] MUSIC_DISC_PIGSTEP"
+        - "[send-message] &c| &fВи ворухнулись! Телепортацію скасовано!"
+        - "[show-title] 1 6 1 &8&l&kkkk&#FC6F00&lS&#FC7700&lu&#FC7F00&lr&#FC8700&lv&#FC8F00&li&#FC9700&lv&#FC9F00&la&#FCA700&ll&#FCAF00&lB&#FCB700&lo&#FCBF00&lo&#FCC700&lm&8&l&kkkk{NL}&cТелепортацію скасовано!"
+
+    # Гравець вийшов.
+    QUIT:
+      actions:
+        - "[play-sound] ENTITY_VILLAGER_NO 10 1"
+        - "[send-message] &c| &fГравець &c{SENDER} &fвийшов з серверу."
+
+# Телепорт до спавну /spawn.
+spawn-teleport:
+
+  enabled: true # Увімкнено?
+  countdown: 10 # Час який доведеться чекати гравцю при телепортації.
+
+  cancel-on-move: true # Скасовувати телепортацію якщо гравець ворухнувся.
+
+  # Події. 100% кастомізація! ЮХУУУ!!!!
+  events:
+
+    10:
+      actions:
+        - "[play-sound] MUSIC_DISC_PIGSTEP 10 1"
+        - "[show-title] 1 6 1 &8&l&kkkk&#FC6F00&lS&#FC7700&lu&#FC7F00&lr&#FC8700&lv&#FC8F00&li&#FC9700&lv&#FC9F00&la&#FCA700&ll&#FCAF00&lB&#FCB700&lo&#FCBF00&lo&#FCC700&lm&8&l&kkkk{NL}&fТелепортація через &#00d5fc{TIME}&f..."
+
+    9:
+      actions:
+        - "[play-sound] ENTITY_EXPERIENCE_ORB_PICKUP 10 1"
+        - "[show-title] 1 6 1 &8&l&kkkk&#FC6F00&lS&#FC7700&lu&#FC7F00&lr&#FC8700&lv&#FC8F00&li&#FC9700&lv&#FC9F00&la&#FCA700&ll&#FCAF00&lB&#FCB700&lo&#FCBF00&lo&#FCC700&lm&8&l&kkkk{NL}&fТелепортація через &#00d5fc{TIME}&f..."
+    8:
+      actions:
+        - "[play-sound] ENTITY_EXPERIENCE_ORB_PICKUP 10 1"
+        - "[show-title] 1 6 1 &8&l&kkkk&#FC6F00&lS&#FC7700&lu&#FC7F00&lr&#FC8700&lv&#FC8F00&li&#FC9700&lv&#FC9F00&la&#FCA700&ll&#FCAF00&lB&#FCB700&lo&#FCBF00&lo&#FCC700&lm&8&l&kkkk{NL}&fТелепортація через &#00d5fc{TIME}&f..."
+
+    7:
+      actions:
+        - "[play-sound] ENTITY_EXPERIENCE_ORB_PICKUP 10 1"
+        - "[show-title] 1 6 1 &8&l&kkkk&#FC6F00&lS&#FC7700&lu&#FC7F00&lr&#FC8700&lv&#FC8F00&li&#FC9700&lv&#FC9F00&la&#FCA700&ll&#FCAF00&lB&#FCB700&lo&#FCBF00&lo&#FCC700&lm&8&l&kkkk{NL}&fТелепортація через &#00d5fc{TIME}&f..."
+
+    6:
+      actions:
+        - "[play-sound] ENTITY_EXPERIENCE_ORB_PICKUP 10 1"
+        - "[show-title] 1 6 1 &8&l&kkkk&#FC6F00&lS&#FC7700&lu&#FC7F00&lr&#FC8700&lv&#FC8F00&li&#FC9700&lv&#FC9F00&la&#FCA700&ll&#FCAF00&lB&#FCB700&lo&#FCBF00&lo&#FCC700&lm&8&l&kkkk{NL}&fТелепортація через &#00d5fc{TIME}&f..."
+
+    5:
+      actions:
+        - "[play-sound] ENTITY_EXPERIENCE_ORB_PICKUP 10 1"
+        - "[show-title] 1 6 1 &8&l&kkkk&#FC6F00&lS&#FC7700&lu&#FC7F00&lr&#FC8700&lv&#FC8F00&li&#FC9700&lv&#FC9F00&la&#FCA700&ll&#FCAF00&lB&#FCB700&lo&#FCBF00&lo&#FCC700&lm&8&l&kkkk{NL}&fТелепортація через &#00d5fc{TIME}&f..."
+
+    4:
+      actions:
+        - "[play-sound] ENTITY_EXPERIENCE_ORB_PICKUP 10 1"
+        - "[show-title] 1 6 1 &8&l&kkkk&#FC6F00&lS&#FC7700&lu&#FC7F00&lr&#FC8700&lv&#FC8F00&li&#FC9700&lv&#FC9F00&la&#FCA700&ll&#FCAF00&lB&#FCB700&lo&#FCBF00&lo&#FCC700&lm&8&l&kkkk{NL}&fТелепортація через &#00d5fc{TIME}&f..."
+
+    3:
+      actions:
+        - "[play-sound] ENTITY_EXPERIENCE_ORB_PICKUP 10 1"
+        - "[show-title] 1 6 1 &8&l&kkkk&#FC6F00&lS&#FC7700&lu&#FC7F00&lr&#FC8700&lv&#FC8F00&li&#FC9700&lv&#FC9F00&la&#FCA700&ll&#FCAF00&lB&#FCB700&lo&#FCBF00&lo&#FCC700&lm&8&l&kkkk{NL}&fТелепортація через &#00d5fc{TIME}&f..."
+
+    2:
+      actions:
+        - "[play-sound] ENTITY_EXPERIENCE_ORB_PICKUP 10 1"
+        - "[show-title] 1 6 1 &8&l&kkkk&#FC6F00&lS&#FC7700&lu&#FC7F00&lr&#FC8700&lv&#FC8F00&li&#FC9700&lv&#FC9F00&la&#FCA700&ll&#FCAF00&lB&#FCB700&lo&#FCBF00&lo&#FCC700&lm&8&l&kkkk{NL}&fТелепортація через &#00d5fc{TIME}&f..."
+
+    1:
+      actions:
+        - "[play-sound] ENTITY_EXPERIENCE_ORB_PICKUP 10 1"
+        - "[show-title] 1 6 1 &8&l&kkkk&#FC6F00&lS&#FC7700&lu&#FC7F00&lr&#FC8700&lv&#FC8F00&li&#FC9700&lv&#FC9F00&la&#FCA700&ll&#FCAF00&lB&#FCB700&lo&#FCBF00&lo&#FCC700&lm&8&l&kkkk{NL}&fТелепортація через &#00d5fc{TIME}&f..."
+
+    # Успішно телепортовано.
+    TELEPORTED:
+      actions:
+        - "[stop-sound] MUSIC_DISC_PIGSTEP"
+        - "[play-sound] ENTITY_ENDERMAN_TELEPORT 10 1"
+        - "[show-title] 1 6 1 &8&l&kkkk&#FC6F00&lS&#FC7700&lu&#FC7F00&lr&#FC8700&lv&#FC8F00&li&#FC9700&lv&#FC9F00&la&#FCA700&ll&#FCAF00&lB&#FCB700&lo&#FCBF00&lo&#FCC700&lm&8&l&kkkk{NL}&aТелепортовано на спавн!"
+
+    # Гравець ворухнувся.
+    MOVED:
+      actions:
+        - "[play-sound] BLOCK_NOTE_BLOCK_BELL 10 0"
+        - "[stop-sound] MUSIC_DISC_PIGSTEP"
+        - "[send-message] &c| &fВи ворухнулись! Телепортацію скасовано!"
+        - "[show-title] 1 6 1 &8&l&kkkk&#FC6F00&lS&#FC7700&lu&#FC7F00&lr&#FC8700&lv&#FC8F00&li&#FC9700&lv&#FC9F00&la&#FCA700&ll&#FCAF00&lB&#FCB700&lo&#FCBF00&lo&#FCC700&lm&8&l&kkkk{NL}&cТелепортацію скасовано!"

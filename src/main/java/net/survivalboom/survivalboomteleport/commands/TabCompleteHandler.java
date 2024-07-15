@@ -1,0 +1,76 @@
+package net.survivalboom.survivalboomteleport.commands;
+
+import net.survivalboom.survivalboomteleport.configuration.PluginMessages;
+import org.bukkit.Bukkit;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandSender;
+import org.bukkit.command.TabCompleter;
+import org.bukkit.entity.Player;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class TabCompleteHandler implements TabCompleter {
+
+    @Override
+    public @Nullable List<String> onTabComplete(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
+        return null;
+    }
+
+    public static boolean addPossibleCompletions(@Nullable List<String> hints, @Nullable List<String> arguments, @NotNull String[] tabcompleteArgs, @NotNull List<String> list, int index, boolean onlySuggest) {
+
+        if (tabcompleteArgs.length > index + 1) return false;
+        if (tabcompleteArgs.length - 1 < index) return true;
+
+        if (hints != null) list.addAll(hints);
+
+        if (arguments == null) return true;
+
+        String userInput;
+        try { userInput = tabcompleteArgs[index]; } catch (IndexOutOfBoundsException e) { userInput = null; }
+        if (userInput.equals("")) userInput = null;
+
+        if (arguments.size() < 1 && !onlySuggest) {
+            list.add(replaceColorCodes(PluginMessages.getMessage("not-found")));
+            return true;
+        }
+
+        if (userInput == null) {
+            list.addAll(arguments);
+            return true;
+        }
+
+        List<String> out = new ArrayList<>();
+        for (String arg : arguments) {
+            if (!arg.contains(userInput)) continue;
+            out.add(arg);
+        }
+
+        if (out.size() < 1 && !onlySuggest) {
+            list.add(replaceColorCodes(PluginMessages.getMessage("argument-not-found").replace("{ARGUMENT}", userInput)));
+            return true;
+        }
+
+        list.addAll(out);
+
+        return true;
+
+    }
+
+    private static String replaceColorCodes(@NotNull String in) {
+        return in.replace("&", "§");
+    }
+
+    public static List<String> getPlayerNames() {
+
+        List<String> out = new ArrayList<>();
+
+        for (Player player : Bukkit.getOnlinePlayers()) out.add(player.getName());
+
+        return out;
+
+    }
+
+}
